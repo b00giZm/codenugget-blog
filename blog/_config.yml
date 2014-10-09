@@ -13,3 +13,12 @@ github_username:  b00gizm
 # Build settings
 markdown: kramdown
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "default"
