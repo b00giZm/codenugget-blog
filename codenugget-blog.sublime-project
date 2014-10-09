@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"name": "codenugget-blog — content",
+			"follow_symlinks": true,
+			"path": "/Users/stylez/Dropbox/Apps/Editorial/codenugget-blog"
+		},
+		{
+			"name": "codenugget-blog — code",
+			"follow_symlinks": true,
+			"path": ".",
+			"folder_exclude_patterns": [
+				"blog/_drafts",
+				"blog/_posts"
+			],
+		}
+	]
+}
