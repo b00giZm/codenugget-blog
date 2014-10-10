@@ -11,8 +11,9 @@
 			"follow_symlinks": true,
 			"path": ".",
 			"folder_exclude_patterns": [
-				"blog/_drafts",
-				"blog/_posts"
+				"_drafts",
+				"_posts",
+				"_site"
 			],
 		}
 	]
