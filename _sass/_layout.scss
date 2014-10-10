@@ -118,6 +118,10 @@
     float: left;
     margin-bottom: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
+
+    .avatar {
+        @include circle-avatar("http://www.gravatar.com/avatar/925306b0511f598cf8f234576e74f2d2?d=mm&s=96", 96px)
+    }
 }
 
 .footer-col-1 {

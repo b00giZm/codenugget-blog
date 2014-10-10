@@ -38,7 +38,19 @@ $on-laptop:        800px;
     }
 }
 
-
+@mixin circle-avatar($url, $size) {
+  width: $size;
+  height: $size;
+  background-size: $size $size;
+  background: rgba(100,100,100,0.1) url($url);
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  -ms-border-radius: $size;
+  -o-border-radius: $size;
+  border-radius: $size;
+  border-bottom: 1px solid rgba(255,255,255,0.8);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
