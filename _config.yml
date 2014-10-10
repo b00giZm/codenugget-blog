@@ -2,9 +2,9 @@
 title: CodeNugget
 email: hello@codenugget.co
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  CodeNugget is all about web and mobile development, workflow automation,
+  interesting bits of tech news, and the overall digital lifestyle. Written
+  and maintained by Pascal Cremer.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://codenugget.co" # the base hostname & protocol for your site
 twitter_username: b00gizm
