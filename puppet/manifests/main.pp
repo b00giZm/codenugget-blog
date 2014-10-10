@@ -13,7 +13,7 @@ class system-update {
 }
 
 rvm_system_ruby {
-  'ruby-2.1.2':
+  'ruby-2.0.0-p576':
     ensure      => 'present',
     default_use => true,
 }

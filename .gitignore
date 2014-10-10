@@ -1,4 +1,6 @@
 .DS_Store
 .vagrant
+.sass-cache
+_site
 puppet/modules
 !.gitkeep
