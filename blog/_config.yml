@@ -11,8 +11,14 @@ twitter_username: b00gizm
 github_username:  b00gizm
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+
+# Redcarpet
+redcarpet:
+  extensions: [
+    'footnotes'
+  ]
 
 # Defaults
 defaults:
