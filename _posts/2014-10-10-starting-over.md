@@ -3,7 +3,7 @@ layout:     post
 title:      "Starting over"
 author:     Pascal Cremer
 date:       2014-10-10 13:25:30
-tag:        meta, blog
+tags:       meta blog
 ---
 Writing and maintaining a blog - especially one, where you commited to write articles in a language other than your native one - can be hard and cumbersome. I know that, because I tried several times. It's time consuming and most of the proprietery blogging engines out there are crap. While I really enjoy the writing itself, I definitely didn't enjoy using almost all mainstream blogging software out there. And those who offered some refreshing new ideas to web publishing (like [Postach.io](http://postach.io)[^postach]), I found pretty much limited when it came to customization.
 
