@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Swift's Implicitily Unwrapped Optionals"
+title:      "Swift's Implicitly Unwrapped Optionals"
 author:     Pascal Cremer
 date:       2014-10-13 22:47:30
 tags:       dev ios swift objective-c quick-tip
@@ -8,7 +8,7 @@ tags:       dev ios swift objective-c quick-tip
 
 Like the majority of iOS and OS X developers, I'm genuinely excited about [Swift](https://developer.apple.com/swift/), the new programming language Apple dropped as big surprise on this year's [WWDC keynote](http://www.apple.com/apple-events/june-2014/). Due to other projects, I didn't had that much time to dig into Swift as much as I would have liked during the summer, but I read as much as I could about it.
 
-One thing I kinda skipped (because I didn't really get it) were Swift's ["Implicitily Unwrapped Optionals"](https://developer.apple.com/library/ios/documentation/swift/conceptual/swift_programming_language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-XID_491). I mean, I got that it automatically unwraps your optionals, so instead of writing code like this
+One thing I kinda skipped (because I didn't really get it) were Swift's ["Implicitly Unwrapped Optionals"](https://developer.apple.com/library/ios/documentation/swift/conceptual/swift_programming_language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-XID_491). I mean, I got that it automatically unwraps your optionals, so instead of writing code like this
 
 ```swift
 let possibleString: String? = "An optional string."
