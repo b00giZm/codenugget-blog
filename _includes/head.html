@@ -9,7 +9,7 @@
     <meta name="author" content="Pascal Cremer" />
 
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="{{ "/img/logo-m.png" | prepend: site.baseurl | prepend: site.url }}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     {% if page.title %}
     <meta property="og:type" content="article" />
