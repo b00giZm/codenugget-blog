@@ -21,6 +21,15 @@
     &:visited {
         color: $grey-color-dark;
     }
+
+    .logo {
+        margin: 10px 0px 10px 0px;
+        height: 45px;
+
+        @include media-query($on-palm) {
+            height: 35px;
+        }
+    }
 }
 
 .site-nav {
