@@ -126,10 +126,18 @@ blockquote {
  */
 pre,
 code {
-    font-size: 16px;
+    font-family: $code-font-family;
+    font-size: $code-font-size;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
     background-color: #eee;
+}
+
+@include media-query($on-palm) {
+    pre,
+    code {
+        font-size: 0.9em;
+    }
 }
 
 code {
