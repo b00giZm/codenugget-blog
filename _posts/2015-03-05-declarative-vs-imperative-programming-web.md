@@ -28,7 +28,7 @@ Sounds esoteric, right? Let's dive into an example.
 
 Say, we want to calculate the sum of the squares of some consecutive natural numbers.
 
-<p>$$s = \sum_{x=1}^Nx^2 = 1^2 + 2^2 + 3^3 + ... + N^2$$</p>
+$$s = \sum_{x=1}^Nx^2 = 1^2 + 2^2 + 3^3 + ... + N^2$$
 
 Yeah I know... MATH! But bear with me, this is a simple one. We'll come to the more interesting stuff later on ;) Let's see how to tackle this in the traditional, imperative way with JavaScript.
 
