@@ -183,7 +183,7 @@ var email = $('#email-field').asEventStream('blur').map(checkIfEmpty);
 var password = $('#password-field').asEventStream('blur').map(checkIfEmpty);
 
 Bacon
-  .combine(checkIfBothEmpty, email, pass);
+  .combineWith(checkIfBothEmpty, email, password);
   .assign($('#signup-button'), 'attr', 'disabled')
 ;
 ```
@@ -194,11 +194,11 @@ Now, the only thing that's missing is our error handling.
 
 ```javascript
 function getEmailMessage(noEmail) {
-  return noEmail ? 'Please enter email address' : '';
+  return noEmail ? 'Please enter email address.' : '';
 }
 
 function getPasswordMessage(noPassword) {
-  return noPassword ? 'Please enter password' : '';
+  return noPassword ? 'Please enter password.' : '';
 }
 
 email.map(getEmailMessage).assign($('#email-error'), 'html');
@@ -214,11 +214,11 @@ jQuery(function($) {
   function checkIfBothEmpty(noEmail, noPass) { return noEmail || noPass; }
 
   function getEmailMessage(noEmail) {
-    return noEmail ? 'Please enter email address' : '';
+    return noEmail ? 'Please enter email address.' : '';
   }
 
   function getPasswordMessage(noPassword) {
-    return noPassword ? 'Please enter password' : '';
+    return noPassword ? 'Please enter password.' : '';
   }
 
   // Email field
@@ -231,12 +231,14 @@ jQuery(function($) {
 
   // Both fields
   Bacon
-    .combine(checkIfBothEmpty, email, pass)
+    .combineWith(checkIfBothEmpty, email, password)
     .assign($('#signup-button'), 'attr', 'disabled')
   ;
 
 });
 ```
+
+I prepared a [jsfiddle](https://jsfiddle.net/b00gizm/f011j2qo/1/) so you can see it in action.
 
 Much cleaner, more readable and, above all, functional. You might argue that it's roughly the same amount than our imperative example. But think about this: What if we need to add one or more fields? Maybe a check box, or dialog box. Our imperative code would get more and more complex and confusing. But for our declarative case, we just had to create the additional event streams and combine them at the end. A real maintenance and extensibility win for us.
 
