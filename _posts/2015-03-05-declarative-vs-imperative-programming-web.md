@@ -151,7 +151,7 @@ There are many libraries for all different kinds of programming languages out th
 Let's get declarative, should we? We'll start with just the email field.
 
 ```javascript
-var email = $('#email-field')
+$('#email-field')
   .asEventStream('blur')
   .map(function(e) { return !e.target.value; })
   .assign($('#signup-button'), 'attr', 'disabled')
@@ -165,7 +165,7 @@ You can even get a bit more declarative by using named mapping functions instead
 ```javascript
 function checkIfEmpty(e) { return !e.target.value; }
 
-var email = $('#email-field')
+$('#email-field')
   .asEventStream('blur')
   .map(checkIfEmpty)
   .assign($('#signup-button'), 'attr', 'disbled')
