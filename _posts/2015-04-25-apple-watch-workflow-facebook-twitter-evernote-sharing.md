@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Post to Facebook from your Apple Watch with Workflow"
+title:      "Post to Facebook, Twitter and Evernote from your Apple Watch with Workflow"
 author:     Pascal Cremer
 date:       2015-04-25 18:55:30
 tags:       apple applewatch ios automation workflow social sharing
@@ -12,15 +12,21 @@ A few weeks ago, the Workflow team unveiled a mini site where they were announci
 
 I was among the lucky ones who got theirs hands on the first batch of Apple Watches sent to customers on April 24th. After one night of extensively testing (and basically draining its battery twice), I started thinking about a useful workflow to have on your wrist.
 
-So I threw together a simple but effective little workflow called Wrist Share to post a single image or multiple images plus text to Facebook (and other services) without Handoff. Here are some screenshots:
+So I threw together a workflow called Wrist Share to post a single image or multiple images plus text to Facebook, Twitter, Evernote or all of them without Handoff. You can either choose a photo from your iOS library, take the latest photo or screenshot, an animated GIF from [Giphy](http://giphy.com), the album art of your currently playing song, or your location. Here are some screenshots:
 
-![Wrist Share Screenshots](http://i.imgur.com/IaxjhB8.jpg)
+![Wrist Share Screenshots](http://i.imgur.com/gXmKJ4j.jpg)
 
-![Wrist Share Screenshots](http://i.imgur.com/M6uhxGi.jpg)
+![Wrist Share Screenshots](http://i.imgur.com/gTU5AZs.jpg)
 
-Some small caveats:
+![Wrist Share Screenshots](http://i.imgur.com/EIO1U3Y.jpg)
+
+Some caveats:
 
 * At the moment, only locally stored images will work. If you choose an image that hasn't been yet downloaded from iCloud, it will crash the Workflow Watch app
+* Extracting an image from your current location seems to crash most of the time. I only got it working once or twice. I think that'll get fixed in a future update of Workflow
 * I added a resize action to have a maximum width of 800 pixels. If an image is too big, it seems to crash the Workflow Watch app
+* When sharing to Evernote, sometimes the Workflow Watch app gets killed by the system. I believe that's because it sometimes might take to long to finish. But in all of my tests, the sharing itself was successful
 
-I personally think it's pretty damn sweet to be able to post stuff to Facebook from your freaking wrist watch without having to wait for the official Facebook app (if there ever will be one).
+I personally think it's especially pretty damn sweet to be able to post stuff to Facebook from your freaking wrist watch without having to wait for the official Facebook Watch app (if there ever will be one).
+
+You can download the workflow here:
